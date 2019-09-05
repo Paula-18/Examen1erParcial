@@ -54,8 +54,8 @@ namespace Examen1erParcial
             }
         }
 
-        private float _rating;
-        public float Rating
+        private double _rating;
+        public double Rating
         {
             get
             {
@@ -96,6 +96,18 @@ namespace Examen1erParcial
         {
             Titulo = titulo;
             Año = año;
+        }
+
+        public Pelicula(string titulo,int año, string director, string genero, string pais, string sipnosis, int duracion, double rating)
+        {
+            Titulo = titulo;
+            Año = año;
+            Director = director;
+            Genero = genero;
+            Pais = pais;
+            Sipnosis = sipnosis;
+            Duracion = duracion;
+            Rating = rating;
         }
     }
 }
