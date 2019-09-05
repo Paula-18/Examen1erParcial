@@ -12,7 +12,7 @@ namespace Examen1erParcial
         public string Director { get; set; }
         public string Genero { get; set; }
         public string Pais { get; set; }
-        public string Sipnosis { get; set; }
+        public string Sinopsis { get; set; }
 
         private int _año;
         public int Año
@@ -80,7 +80,7 @@ namespace Examen1erParcial
             Director = "Sin Director";
             Genero = "Sin Asignar";
             Pais = "Sin País";
-            Sipnosis = "Sin Sipnosis";
+            Sinopsis = "Sin Sipnosis";
         }
 
         public Pelicula(string titulo, string director, string genero, string pais, string sipnosis)
@@ -89,7 +89,7 @@ namespace Examen1erParcial
             Director = director;
             Genero = genero;
             Pais = pais;
-            Sipnosis = sipnosis;
+            Sinopsis = sipnosis;
         }
 
         public Pelicula(string titulo, int año)
@@ -98,14 +98,14 @@ namespace Examen1erParcial
             Año = año;
         }
 
-        public Pelicula(string titulo,int año, string director, string genero, string pais, string sipnosis, int duracion, double rating)
+        public Pelicula(string titulo,int año, string director, string genero, string pais, string sinopsis, int duracion, double rating)
         {
             Titulo = titulo;
             Año = año;
             Director = director;
             Genero = genero;
             Pais = pais;
-            Sipnosis = sipnosis;
+            Sinopsis = sinopsis;
             Duracion = duracion;
             Rating = rating;
         }

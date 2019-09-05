@@ -41,11 +41,11 @@ namespace Examen1erParcial
 
             foreach (Playlist playlist in playlists)
             {
-                Console.WriteLine("Lista: " + playlist.Titulo + " Descripción:  " + playlist.Descripcion);
-                Console.WriteLine("Lista de los peliculas: ");
+                Console.WriteLine("\nLista: \t" + playlist.Titulo + " Descripción: " + playlist.Descripcion);
+                Console.WriteLine("\nLista de los peliculas: ");
                 foreach (Pelicula pelicula in playlist.Peliculas)
                 {
-                    Console.WriteLine("*" + pelicula.Titulo + " " + pelicula.Año);
+                    Console.WriteLine("Película:" + pelicula.Titulo + "\n (" + pelicula.Año + ")");
                 }
             }
 
